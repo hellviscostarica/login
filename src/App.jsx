@@ -5,11 +5,15 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const App = () => {
   return (
     <Router>
+        <Button>Bootstrap Button</Button>
       <Routes>
         <Route path="/" element={<Home />} />        
         <Route path="/Login" element={<Login />} />
